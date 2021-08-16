@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-bottom: 0.1rem;
+    padding-top: 6px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #030303, #eaacf7);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ main.container {
+     background: white;
+     max-width: 400px;
+     max-height: 50vh;
+     padding: 2rem;
+     padding-bottom: 6rem;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+     border-radius: 9px;
+}
+/* AQUI É A AREA DO FORMULARIO TODO */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+
+/* AREA DAS LINHAS ABAIXO DOS NOMES*/
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(177, 173, 173);
+}
+
+
+
+
+
+
+main h2 {
+    position: relative;
+}
+
+
+/* AQUI É A AREA DO BOTAO */
+form input[ type="submit"] {
+    margin-top: 3rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #0f0d11, rgb(238, 148, 238));
+    cursor: pointer;
+    color: white;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+
+/* AQUI É A AREA DA TRANSIÇÃO DE COR NO BOTAO */
+form input[ type="submit"]:hover { 
+    letter-spacing: 0.5px;
+    background: rgb(236, 186, 243);
+}
+
+
+
+/* AQUI É A AREA DO FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+/* AQUI É A AREA DA FRASE ABAIXO DO BOTAO */
+.footer span {
+    color: black(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* AQUI É A AREA DA  */
+.footer .social-field {
+    padding: 0.7rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+
+/* AQUI É A AREA DA REDES SOCIAIS */
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field a i{
+    margin: 0.7rem;
+    width: 15px;
+}
+
+
+.footer .social-field.twitter {
+    background-color: black;
+}
+
+.footer .social-field.facebook {
+    background-color: black;
+}
+
+
+h3 {
+    text-align: center;
+    padding-bottom: 7px;
+    padding-top: 0px;   
+}
